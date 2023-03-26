@@ -25,7 +25,7 @@ def etl_ingest_data_taskflow():
         
     @task()
     def transform_and_load(server_json: dict) -> None:
-        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "./plugins/dtc-de-project-380614-38429ed300c2.json"
+        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "./plugins/.gc/dtc-de-project-380614-38429ed300c2.json"
         server_map_rotation = pd.DataFrame.from_dict(server_json['rotation'])
         server_players = pd.DataFrame.from_dict(server_json['players'])
 

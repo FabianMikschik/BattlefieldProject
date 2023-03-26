@@ -14,7 +14,7 @@ import pendulum
 
 def etl_gcs_to_bq_taskflow():
     """Main ETL flow to load data into GCS"""
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "./plugins/dtc-de-project-380614-38429ed300c2.json"
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "./plugins/.gc/dtc-de-project-380614-38429ed300c2.json"
     
     client = bigquery.Client()
     job_config = bigquery.LoadJobConfig(
