@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    database: dtc-de-project-380614  
+    schema: battlefield_vault  
+    tables:
+      - name: landing_server_bridge_players
+      - name: landing_server_players
+      - name: landing_server_infos
+      - name: landing_server_map_rotation
+      
